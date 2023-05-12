@@ -26,7 +26,7 @@ const Register = () => {
         })
         .catch(error =>{
             console.log(error)
-            setError("X", error.message)
+            setError(error.message)
         })
 
     }
