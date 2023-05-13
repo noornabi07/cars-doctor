@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import login from '../../assets/images/login/login.svg'
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
+import SocialLogin from '../Shared/SocialLogin/SocialLogin';
 
 const Register = () => {
     const [success, setSuccess] = useState('')
@@ -73,6 +74,7 @@ const Register = () => {
                                 </div>
                             </form>
                             <p className='text-center mt-5 font-semibold text-orange-500'>Have An Account? <Link to="/login" className='text-lime-700 underline'>Login</Link></p>
+                            <SocialLogin></SocialLogin>
                         </div>
                     </div>
                 </div>
