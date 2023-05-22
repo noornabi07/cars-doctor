@@ -26,7 +26,7 @@ const CheckOut = () => {
         };
         console.log(bookings)
 
-        fetch('http://localhost:3000/bookings', {
+        fetch('https://car-doctor-server-zeta-two.vercel.app/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
